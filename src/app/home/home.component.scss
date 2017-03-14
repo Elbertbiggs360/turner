@@ -1,0 +1,91 @@
+.mat-chip:not(.mat-basic-chip) {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 24px;
+  font-size: 11px;
+  line-height: 14px;
+}
+.cursor {
+  cursor: pointer;
+}
+.u-taskName {
+  overflow: auto;
+  max-width: 200px;
+}
+.card{
+  min-height:450px;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.05), 10px 10px 10px rgba(0,0,0,0.02);
+}
+.card:hover {
+  box-shadow: 0 14px 28px rgba(173,20,87, 0.25), 0 10px 10px rgba(173,20,87, 0.22);
+}
+
+.row-listing {
+  margin-top: 2px;
+}
+.new-category{
+  background-color: #eee;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height:auto;
+  max-height:205px;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.05), 10px 10px 10px rgba(0,0,0,0.02);
+}
+.preview-poster {
+  width:50%;
+  padding: 1px 1px;
+}
+.new-category::-webkit-scrollbar { 
+    display: none; 
+}
+.top-h3{
+  font-weight: 300;
+  margin-top:5px
+}
+.label{
+  padding:1px;
+  margin: 0 1px;
+  height: auto;
+  font-size: 8px;
+  background-color: #eee;
+}
+.card.clickable:focus {
+    text-decoration: none;
+    -webkit-transform: translate3d(0, -250px, 0);
+    transform: translate3d(0, -250px, 0);
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: -webkit-transform 0.3s ease;
+    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.card-text {
+  max-height:100px
+}
+@media only screen and (min-width: 768px) {
+
+  .preview-poster {
+    padding: 1px;
+    margin: 0;
+  }
+  .card{
+    width:80%;
+    min-height:520px;
+  }
+  .new-category{
+    background-color: #FFF;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    height:auto;
+    max-height:255px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.05), 10px 10px 10px rgba(0,0,0,0.02);
+    margin-top:3%;
+  }
+  .label{
+  padding:3px;
+  margin: 1px 3px;
+  height: auto;
+  font-size: 12px;
+  background-color: #FFF;
+}
+}
